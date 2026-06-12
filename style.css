@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+   background-color: teal; 
+}
+
+.container{
+    padding-top: 80px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.slides{
+    padding-top: 10vh;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 4rem 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.slides p{
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.slides img{
+    width: min(350px, 90%);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.slides ul li{
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.slides a{
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.slides h2{
+    text-align: center;
+    font-family: "Bitcount Prop Double", system-ui;
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 400;
+    color: aquamarine;
+}
+
+.achievements-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.achievements-box .alevels,
+.achievements-box .music,
+.achievements-box .apprenticeship{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border: 15px solid rgb(72, 164, 172);
+    padding: 50px;
+    margin: 20px;
+}
+
+.alevels ul{
+    padding-left: 40px;
+}
+
+.music ul{
+    padding-left: 40px;
+}
+
+.apprenticeship ul{
+    padding-left: 40px;
+}
+
+.about-me-box,
+.projects-box,
+.achievements-box,
+.contact-box {
+    width: min(90%, 1000px) ;    
+    margin: 0 auto; 
+}
+
+
+.btn,
+.form-control{
+    width: 50%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping when zoomed */
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+    gap: 4rem;
+}
+
+.wrapper ul a {
+    text-decoration: none; 
+    font-family: "Bitcount Prop Double", system-ui;
+
+    background: rgb(77, 131, 134);
+    color: transparent;
+    background-clip: text;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("images/teal.jpg");
+    background-size: cover;
+}
+
+.wrapper ul a:hover {
+  color:  rgb(31, 189, 178);
+
+}
