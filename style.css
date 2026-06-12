@@ -124,7 +124,7 @@ body {
     background: rgb(77, 131, 134);
     color: transparent;
     background-clip: text;
-    font-size: 2em;
+    font-size: clamp(1rem, 4vw, 2rem);
     font-weight: 500;
 }
 
@@ -141,3 +141,36 @@ nav{
   color:  rgb(31, 189, 178);
 
 }
+
+@media (max-width: 600px){
+    .wrapper ul {
+        gap: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .wrapper ul a {
+        font-size: 1rem;
+    }
+
+    .achievements-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements-box .alevels,
+    .achievements-box .music,
+    .achievements-box .apprenticeship {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1024px){
+    .wrapper ul {
+        gap: 2rem;
+    }
+
+    .achievements-box {
+        gap: 15px;
+    }
+}
+
